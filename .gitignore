@@ -1,0 +1,34 @@
+*.class
+#package files
+*.war
+*.ear
+#*.jar(支付宝的jar包要提供到仓库里）
+
+#kdiff3
+*.orig
+
+#maven
+target/
+
+#eclipse
+.settings/
+.project
+.classpath
+
+#idea
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+
+#temp files
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+#system
+.DS_Store
+Thumb.db
