@@ -38,15 +38,14 @@ public class ServerResponse<T> implements Serializable {
         this.data = data;
     }
 
-    //check if the Response is success
     @JsonIgnore
     //ignore this in the Json serializable result
+    //check if the Response is success
     public boolean isSuccess() {
         return this.status == ResponseCode.SUCCESS.getCode();
     }
 
     //public access to the parameters
-
     public int getStatus() {
         return status;
     }
@@ -82,7 +81,7 @@ public class ServerResponse<T> implements Serializable {
         return new ServerResponse<T>(ResponseCode.ERROR.getCode(), ResponseCode.ERROR.getDescription());
     }
 
-    public static <T> ServerResponse<T> createWithErrormsg(String errorMsg) {
+    public static <T> ServerResponse<T> createWithErrorMsg(String errorMsg) {
         return new ServerResponse<T>(ResponseCode.ERROR.getCode(), errorMsg);
     }
 
