@@ -12,3 +12,4 @@ This project is a mock simulation of a shopping mall system. It includes core en
 - 🔍 Basic search/filter for products
 
 ## 📁 Project Structure
+
