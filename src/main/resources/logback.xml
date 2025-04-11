@@ -43,7 +43,7 @@
         </filter>
     </appender>
 
-    <logger name="com.shawnmall" additivity="false" level="INFO" >
+    <logger name="com.mockmall" additivity="false" level="INFO" >
         <appender-ref ref="shawnmall" />
         <appender-ref ref="console"/>
     </logger>
@@ -52,7 +52,7 @@
 
     <!--  mybatis log 日志 -->
 
-    <logger name="com.shawnmall.dao" level="DEBUG"/>
+    <logger name="com.mockmall.dao" level="DEBUG"/>
 
     <!--<logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="DEBUG" >-->
         <!--<appender-ref ref="console"/>-->
